@@ -24,7 +24,7 @@
 | Conjuction | $p \land q$ | `\land` | p and q | p and q are true | at least one of p or q are false | 
 | Disjunction | $p \lor q$ | `\lor` | p or q | at least of one of p or q are true | both p and q are false |
 | Exclusive or | $p \oplus p$ | `\oplus` | p or q, but not both | one of p and q is true, and the other is false | p and q are the true | 
-| Implication | $p \implies q$ | `\implies` | p implies q | | when p is true but q is false |
+| Implication | $p \implies q$ | `\implies` | p implies q | | p is true but q is false |
 
 
 # 1.1.3 Conditional statements 
@@ -42,7 +42,7 @@ $q$ unless $\neg p$
 
 ### implication truth table
 
-| p | q | if p then q |
+| p | q | if p then q, $p\implies q$ |
 | --- | --- | --- |
 | T | T | T |
 | T | F | F |
@@ -57,7 +57,7 @@ Implication is also a conditional statement
  - $\neg q\implies \neg p$ = contrapositive
  - $\neg p\implies \neg q$ = inverse
 
-5. Given the proposition "If it is raining, then the lawn is wet"
+6. Given the proposition "If it is raining, then the lawn is wet"
 What is the truth value of the proposition
 
 p = "it is raining"
@@ -76,3 +76,85 @@ A truth table is a compact way to evaluate the truth values of a proposition
 | T | F | F | T | T | F |
 | F | T | F | T | T | T |
 | F | F | F | F | F | T |
+
+
+7. Truth table for $p\implies\neg(p\land q)$
+
+| p | q | $p\land q$ | $\neg(p\land p)$ | $p\implies\neg(p\land q)$ |
+| - | - | - | - | - | 
+| T | T | T | F | F |
+| T | F | F | T | T |
+| F | T | F | T | T |
+| F | F | F | T | T |
+
+or 
+
+| p | q | $p\implies\neg(p\land q)$ |
+| - | - | - |
+| T | T | T F F T |
+| T | F | T T T F |
+| F | T | F T T F |
+| F | F | F T T F |
+| Step | 1 | 1 4 3 2 |
+
+8. TT $[(p\lor q)\land r]\implies(p\land\neg q)$
+
+| p | q | r | $p\lor q$ | $\neg q$ | $(p\lor q)\land r$ | $p\land\neg q$ | $[(p\lor q)\land r]\implies(p\land\neg q)$ |
+| - | - | - | - | - |-|-|-|
+| T | T | T | T | F |T|F|F|
+| T | T | F | T | F |F|F|T|
+| T | F | T | T |T|T|T|T|
+| T | F | F | T |T|F|T|T|
+| F | T | T | T |F|T|F|F|
+| F | T | F | T |F|F|F|T|
+| F | F | T | F |T|F|F|T|
+| F | F | F | F |T|F|F|T|
+
+
+## biconditional
+
+let p and q be propositions. If $p\implies q$ and $p\implies q$ are both true, then the biconditional $p\iff q$ is true
+
+| p | q | $p\to q$ | $q\to p$ | $(p\to q)\land(q\to p)$, $p\iff q$ |
+|-|-|-|-|-|
+|T|T|T|T|T|
+|T|F|T|F|F|
+|F|T|F|T|F|
+|F|F|T|T|T|
+
+
+### Common terms
+p if and oonly if q
+p iff q
+p is necessary and suffcient for q
+
+# 1.1.5 - Precedence of Logical Operators
+
+what does $\neg\to p$ mean? 
+- $(\neg p)\to q$ - THIS
+- $\neg (p\to q)$
+
+Order:
+1. $\neg$
+2. $\land$, $\lor$
+3. $\to$, $\iff$
+
+# 1.1.6 - Logic and Bits
+
+9. A bit is a binary digit: 0, 1
+
+## Logical Operations
+|Operation|Bit Operations|
+|-|-|
+| $\land$ | bitwise AND |
+| $\lor$ | bitwise OR |
+| $\oplus$ | bitwise XOR |
+
+
+11. bit operation to the bit strings 1100 and 0101
+
+1100 AND 0101 = 0100
+1100 OR  0101 = 1101
+1100 XOR 0101 = 1001
+
+

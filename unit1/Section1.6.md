@@ -67,3 +67,52 @@ and the last proposition in the proof is the conlcusion of the arguement
 |9|$\neg q$|4, 8| Disjunctive Syllogism (ROI)|
 |10|
 
+> [!TODO]
+> finish this
+
+### 1.6.6 - Fallacies
+
+6. 
+- The arguement $((p\to q)\land q)\to p$ is invalid is called the fallacy of affirming the conclusion
+- The arugment $((p\to q)\land\neg p)\to\neg q$ is invalid and is called the fallacy of denying the hypothesis
+
+### 1.6.7 - Rules of inference for Quantified Statements
+
+7. Let P be a propositional function of one variable
+- Universal instantiation takes $\forall xP(x)$ and concludes $P(c)$, where c is a member in the domain of $P$
+- Universal generalization takes $P(c)$ for some arbitrary member $c$ in the domain of $P$ and conlcudes $\forall xP(x)$
+- Existential instantiation takes $\exists xP(x)$ and conclludes $P(c)$ for some member c in the domain of $P$
+- Existential generalization takes $P(c)$ for some arbitrary member $c$ in the domain of $P$ and conclludes $\exists xP(x)$
+
+### 1.6.8 - Combining Rules of Inference for Propositions and Quantified Statements
+
+8. 
+Consider the domain to be the students in a college
+$m$ is Mark Kelley
+$j(x)$: $x$ is a junior
+$s(x)$: $x$ is a senior
+$p(x)$: $x$ is inrolled in a physical education class
+
+Prove the Argument:
+No junior or senior is enrolled in a physical education class.
+Mary Kelley is enrolled in a physical education class.
+Therefore, Mary Kelly is not a senior
+
+$\forall x[(j(x)\lor s(x))\to\neg p(x)$
+$p(m)$
+
+$ \therefore\neg s(m)$
+
+| |Step|Lines|Reason|
+|-|-|-|-|
+|1|$\forall x[(j(x))\lor s(x))\to\neg p(x)$| |Premise|
+|2|$p(m)$| |Premise|
+|3|$j(m)\lor(s(m)\to\neg p(m)$|1|Universal instantiation|
+|4|$\neg\neg p(m)\to\neg(j(m)\lor g(m)$|3|Contrapositive|
+|5|$p(m)\to\neg(j(m)\lor g(m)$|4|Double negation|
+|6|$\neg(j(m)\lor s(m)$|2, 5|Motus Ponems|
+|7|$\neg j(m)\land\neg s(m)$|6|DeMorgan's Law|
+|8|$\neg s(m)\land\neg j(m)$|7|Communitive Law|
+|9|$\neg s(m)$|8|Simplification|
+
+

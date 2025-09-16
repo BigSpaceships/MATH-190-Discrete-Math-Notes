@@ -100,4 +100,62 @@ $mn < 0$ is false (This is a vacuous proof)
 7. 
 Let $p$ be a positive real number. The square root of $p$ is a positive real number $x$ such that $x^2=p$
 
+8.
+> [Prove that the square root of 2 is irrational]
+> Proof by Contradition 
+> Suppose $\sqrt{2}$ is irrational
+> By definition, we write $\sqrt{2}=m/n$ where $m$ and $n$ are integers and $n\neq0$ that have no common factors
+> (in particular, they both cannot be even)
+> Since $\sqrt{2}=m/n$, then $n\sqrt{2}=m$ and squaring gives the $2n^2=m^2$
+> Since $2n^2$ is even (because $n^2$ is an integer), then $m^2$ is also even.
+> By example 3, $m$ must also be even.
+> Since $m$ is even, there exists an integer $k$ such that $m=2k$
+> Squaring both sides gives $m^2=4k^4$
+> Substituting back into $2n^2=m^2$ gives $2n^2=4k^2$
+> Which simplifies to $n^2=2k^2$
+> Since $k$ is an integer, then $k^2$ is an ingeger, so $2k^2$ is even, as is $n^2$
+> By Example 3, $n$ is even
+> It is a contradition that both $m$ and $n$ is even. Thus, $\sqrt{2}$ is irrational $\qed$
+
+9. 
+> [Let $n$ be a nonzero integer. Prove that $n$ is even if and only if $n^2$ is even]
+> Proof 
+> 1. [Suppose $n$ is even. Prove $n^2$ is even]
+> 2) Suppose $n^2$ is even. Prove $n$ is even
+>
+> 1. Suppose $n$ is even
+> Then there exists an integer $k$ such that $n=2k$
+> Since $n^2=(2k)^2=4k^2=2(2k^2)$
+> and $2k^2$ is an integer, then $n^2$ is even
+> 
+> 2) Suppose $n^2$ is even
+> See example 3
+
+Suppose you wanted to prove that 3 porpositions, labeled $P$, $P$, and $R$ are equivalent. What is the minimum number of implications that must be proven?
+$P\to Q\to R\to P$ (Have to prove, not just assign truth values)
+
+### 1.7.8 - Mistakes in Proofs
+10. Assign a grade of A if the claim and proof are correct, even if the proof is not the simplest or the proof you would have given.
+Assign an F if the claim is incorrect, the main idea of the proof is incorrect, or if most of the statements in it are correct.
+Assign a grade of C for a proof that is largely correct, but contains one or two incorrect statements or justifications 
+
+Claim 1: Let $m$ and $n$ be integers. If $m+n$ are even, then $m-n$ is even
+"Proof": This is true because if $m=14$ and $n=6$, then $m+n=20$, which is een and $m-n=8$, which is also even. $\qed$
+F
+
+Claim 2: Let $r$ be a real number. If $r$ is irrational, then $5r$ is irrational.
+
+"Proof": Suppose $5r$ is rational. Then $5r=p/q$ where $p$ and $q$ are integers and $q\neq0$. 
+Therefore $r=p/(5q)$ where $p$ and $5q$ are integers and $5q\neq 0$, so $r$ is rational. 
+Therefore, if $r$ is irrational, then $5r$ is irrational $\qed$
+
+Pretty good 
+
+Claim 3: suppose $m$ is an integer. if $m^2$ is odd, then $m$ is odd
+
+"Proof": Assume $m$ is odd. Then $m=2k+1$ for some integer $k$. 
+Therefore, $m^2=(2k+1)^2=4k^2+4k+1=2(2k^2+2k)+1$, which is odd. 
+Therefore if $m^2$ is odd, then $m$ is odd$\qed$
+
+Don't start off with the equation
 

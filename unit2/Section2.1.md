@@ -100,4 +100,61 @@ AKA $A\subseteq B\equiv\forall x(x\in A\to x\in B)$
 a) $|\{-2,-1,0,1,2\}|$ = $5$
 b) $|\emptyset|$ = $0$
 c) $|\{\mathbb{R}\}|$ = $1$ - the set containing $\mathbb{R}$ NOT the set $\mathbb{R}$
-d) $|\{\emptyset|\}|$ = $1$ = the set containing $\emptyset$ not the empty set
+d) $|\{\emptyset\}|$ = $1$ - the set containing $\emptyset$ not the empty set
+e) $|\{\emptyset, {\emptyset}\}|$ = $2$ - $\emptyset$ and the set containing $\emptyset$ - this didn't format right it shoudl be {0 ,{0}}
+
+## 2.1.5 - Power sets
+
+15. The set of all subsets of a set $S$ is called the power set of $S$ and is written $\mathcal{P}(S)$.
+
+$X\in\mathcal{P}(A)\iff X\subseteq A$
+
+16.
+a) Determine the power set of each set
+i) $S=\{x\}$
+$S=\{\emptyset, {x}\}$
+
+ii) $S=\{x, y\}$
+$S={\emptyset, {x}, {y}, {x, y}\}$
+
+iii) $S=\{x, y, z\}$
+$S=\{\emptyset, {x}, {y}, {z}, {x, y}, {x, z}, {y, z}, {x, y, z}\}$
+
+iv) $S=\mathbb{N}$
+$s=\{\emptyset, {0}, {1}, ..., {0, 1}, {0, 2}, ..., {1, 2}, {1, 3}, ..., \mathbb{N}\}$
+
+b) if $S$ is finite, determine $|\mathcal{P}(S)|$
+if $|S|=n\in\mathbb{N}$, then 
+$|\mathcal{P}(S)|=2^n=2^{|S|}$
+
+17. Let $A$ and $B$ be sets. Prove if  $A\in B$, then $\mathcal{P}(A)\in\mathcal{P}(B)$
+> [Proof]
+> Suppose $X\in\mathcal{P}(A)$ \[show $X\in\mathcal{P}(B)$\]
+> Then $X\subseteq A$
+> Since $X\subseteq A$ and $A\subset B$, then $X\subseteq B$ (By ex. 10)
+> Since $X\subseteq B$, then $X\in\mathcal{P}(B)$. Thus $A\subseteq B$ implies $\mathcal{P}(A)\subseteq\mathcal{P}(B)$
+
+Alternatively the first two lines could be 
+> Suppose $A\subseteq B$ and $X\in\mathcal{P}(A)$ \[Now show $X\in\mathcal{P}(B)$\]
+
+## 2.1.6 - Cartesian Products
+
+18.
+- the ordered pair $(a,b)$ is the ordered collection that has $a$ as its first element and $b$ as its second element
+- the ordered n-tuple $(a_1, a_2, ..., a_n)$ is the ordered collection of $n$ elements that has $a_1$ as its first element, 
+$a_2$ as its second element, ..., and $a_n$ as its last ellement
+
+19.
+- The cartesian product of the sets $A$ and $B$, denoted $A \times B$, is $A\times B=\{(a,b)|a\in A\ and\ b\in B\}$
+- The cartesian product of the sets $A_1, A_2,..., A_n$ denoted $A_1\times A_2\times ...\times A_n$ is
+$A_1\times A_2\times ...\times A=\{(a_1, a_2, ..., a_n)|a_1\in A_i\ for\ i=1,2,...,n\}$
+
+20. Determine the Cartesian product of $A=\{1,2,3\}$ and $B=\{y, z\}$
+$A\times B=\{(1,y),(1,z),(2,y),(2,z),(3,y),(3,z)\}$
+
+If $A$ and $B$ are finite sets, what is $|A\times B|$
+
+$ |A\times B| = |A| |B|$
+
+Notation: Use $A^2=A\times A$. So $\mathbb{R}^2=\{(x,y)|x,y\in\mathbb{R}\}$
+

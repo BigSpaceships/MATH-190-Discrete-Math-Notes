@@ -47,6 +47,6 @@ Table in notes
 - the intersection $A_1, A_2,...,A_n$, denoted $\bigcap^n_{i=1}A_i$, is the set that contains elements that are memebrs all of the sets in the collection
 
 9. For each $i\in\mathbb{Z}^+$, define $A_i=\{0, 1, 2, ..., i\}$ Determine each of the following 
-a) $\bigcup^30_{i=1}A_i=A_30$
-b) $\bigcap^30_{i=1}A_i=\{1\}$
+a) $\bigcup^{30}_{i=1}A_i=A_30$
+b) $\bigcap^{30}_{i=1}A_i=\{1\}$
 

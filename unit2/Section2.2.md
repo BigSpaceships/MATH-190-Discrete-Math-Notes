@@ -50,3 +50,16 @@ Table in notes
 a) $\bigcup^{30}_{i=1}A_i=A_30$
 b) $\bigcap^{30}_{i=1}A_i=\{1\}$
 
+10. $ A_i=[1/i, 2+1/i]$
+
+a) 
+$\bigcup_{i\in\mathbb{Z}^+}A_i$
+
+$A_1=[1,3]$
+$A_2=[1/2,2+1/2]$
+$\bigcup_{i\in\mathbb{Z}^+}A_i=(0,3]$
+
+b)
+$\bigcap_{i\in\mathbb{Z}^+}A_i$
+$\bigcap_{i\in\mathbb{Z}^+}A_i=[1,2]$
+

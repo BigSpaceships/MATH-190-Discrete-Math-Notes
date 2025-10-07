@@ -29,8 +29,8 @@ b) let $sgn:\mathbb{R}\to\mathbb{R}$ be defined by
 c) let $abs:\mathbb{R}\to\mathbb{R}$ be defined by $abs(x)=x*sgn(x)$
     $ran(abs)=\mathbb{R}^+\cup\{0\}=[0,\infty)$
 d) let $floor,\ ceil:\mathbb{R}\to\mathbb{R}$ be defined by
-    $floor=\{(x,n)|n\in\mathbb{Z}\ and\ (\exists c\in[0,1)[x=n+c]\}$
-    $ceil=\{(x,n)|n\in\mathbb{Z}\ and\ (\exists c\in[0,1)[x=n-c]\}$
+    $floor=\{(x,n)|n\in\mathbb{Z}\ and\ (\exists c\in[0,1][x=n+c])\}$
+    $ceil=\{(x,n)|n\in\mathbb{Z}\ and\ (\exists c\in[0,1][x=n-c])\}$
 
     $ran(floor)=\mathbb{Z}$
     $ran(ceil)=\mathbb{Z}$
@@ -45,4 +45,42 @@ $F(\emptyset)=\emptyset$
 a) $f([1,2])=[1,4]$
 b) $f([-1,2])=[0,4]$
 c) $\{x\in\mathbb{R}|f(x)\in[-1,2]\}=[-\sqrt{2},\sqrt{2}]$
+
+5. For a function $f:A\to B$ with $T\subseteq B$, we define the preimage of $T$ through $f$, denoted $f^-1(T)$ as
+$f^-1(T)=\{x\in A|f(x)\in T\}$
+
+6. Let $f:A\to B$ with $S, T \subseteq A$, is $f(S)\cap f(T)=f(S\cap T)$? if yes, prove it. 
+If no, can you say if one side is a subset of the other
+False, but $f(S\cap T)\subseteq f(S)\cap f(T)$
+
+Proposition: If $f:A\to B$ and $S,T\subseteq A$, then $f(S\cap T)\subseteq f(S)\cap f(T)$
+
+> [Proof]: Suppose $f:A\to B$ and $S,T\subseteq A$
+> Suppose $y\in f(S\cap T)$
+> Then there exists $x\in S\cap T$ such that $y=f(x)$
+> Since $x\in S\cap T$, then $x\in S$ and $x\in T$
+> Since $x\in S$ and $x\in T$, then $f(x)\in f(S)$ and $f(x)\in f(T)$
+> Then $f(x)\in f(S)\cap f(T)$
+> Since $y=f(x)$, then $y\in f(S)\cap f(T)$.
+> Thus $f(S\cap T)\subseteq f(s)\cap f(T)$
+
+## 2.3.2 - One to One and Onto Functions
+
+7. Let $f: A\to B$. We say that
+    1) $f$ is one-to-one (or injective) if distinct elements in $A$ have distinct images in $B$
+        - f is 1-1 $\iff \forall x_1,x_2\in A[f(x_1)=f(x_2)\to x_1=x_2]$
+        - f is not 1-1 $\iff \exist x_1,x_2\in A[f(x_1)=f(x_2)\land x_1\neq x_2]$
+    2) $f$ is onto (or subjective) if $B=f(A)$
+        - f is onto $\iff \forall y\in B\exists x\in A[y=f(x)]$
+        - f is not onto $\iff \exists y\in B\forall x\in A[y\neq f(x)]$
+    3) $f$ is a bijection (or in one-to-one correspondence) if it is both one-to-one and onto
+
+8. Determine if the following functions are one-to-one, onto, or both
+a) let $p:\mathbb{Z}\to\mathbb{Z}$ be defined by
+    1) $p(n)=n$ - Both
+    2) $p(n)=n^2+4$ - Neither
+    3) $p(n)=n^3-1$ - One-to-one (because defined on $\mathbb{Z}$)
+b) let $f:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ be defined by
+    1) $f(m,n)=m+n+1$ - Onto
+    2) $g(m,n)=2^m*3^n$ - One-to-one
 

@@ -84,3 +84,47 @@ b) let $f:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ be defined by
     1) $f(m,n)=m+n+1$ - Onto
     2) $g(m,n)=2^m*3^n$ - One-to-one
 
+Counter Examples:
+a - 2): $p(n)=n^2+4$ is not 1-1 because $-1,1\in\mathbb{Z}$(the domain) and $p(-1)=p(1)=5$
+b - 1): $f(m,n)=m+n+1$ is not 11 because $(0,1),(1,0)\in\mathbb{N}\times\mathbb{N}$
+        and $f(0,1)=f(1,0)=2$
+
+a - 2): $p(n)=n^2+4$ is not onto because $2\in\mathbb{Z}$(the codomain), but there is no $n\in\mathbb{Z}$(the domain) 
+        such that $p(n)=2$
+a - 3): $p(n)=n^3-1$ is not onto because $9\in\mathbb{Z}$(the codomain), but there is no $n\in\mathbb{Z}$(the domain)
+        such that $p(n)=8$
+b - 2): $g(m,n)=2^m*2^n$ is not onto because $5\in\mathbb{Z}^+$(the codomain), but there is no $(m,n)\in\mathbb{N}\times\mathbb{N}$
+        such that $g(m,n)=5$
+
+Proofs:
+
+1-1:
+
+a - 1): 
+Proposition: the function $p:\mathbb{Z}\to\mathbb{Z}$ defined by $p(n)=n$ is one-to-one
+> [Proof] Suppose $p(m)=p(n)$ for $m,n\in\mathbb{Z}$.
+> Then $m=n$. Thus $p$ is 1-1 $\qed$
+
+a - 3):
+Proposition: the function $p:\mathbb{Z}\to\mathbb{Z}$ defined by $p(n)=n^3-1$ is one-to-one
+> [Proof] Suppose $p(m)=p(n)$ for $m,n\in\mathbb{Z}$(domain)
+> Then, $m^3-1=n^3-1$. We simplify as $m^3=n^3$.
+> Taking the cube root gives $m=n$
+> Thus, $p$ is 1-1 $\qed$
+
+Onto:
+
+a - 1):
+Proposition: the function $p:\mathbb{Z}\to\mathbb{Z}$ defined by $p(n)=n$ is onto
+> [Proof] Suppose $n\in\mathbb{Z}$(codomain)
+> Since $p(n)=n$ and $n\in\mathbb{Z}$(domain), $p$ is onto. $\qed$
+
+
+b - 1):
+Proposition: the function $f:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ defined by $f(m,n)=n+m+1$ is onto
+> [Proof] Suppose $k\in\mathbb{Z}$
+> Since $k-1\in\mathbb{N}$, $0\in\mathbb{N}$ and $f(k-1,0)=(k-1)+0+1=k$ 
+> Thus, $f$ is onto
+
+b - 2):
+Proposition: the function $g:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ defined by $g(m,n)=2^m*3^n$ is one-to-one

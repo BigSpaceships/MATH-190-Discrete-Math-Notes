@@ -128,3 +128,60 @@ Proposition: the function $f:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ defined 
 
 b - 2):
 Proposition: the function $g:\mathbb{N}\times\mathbb{N}\to\mathbb{Z}^+$ defined by $g(m,n)=2^m*3^n$ is one-to-one
+> [Proof]: [Show $g$ is 1-1]
+> Suppose $g(m,n)=g(p,q)$ [now show $(m,n)=(p,q)$, that is $m=n$ and $p=q$]
+> Then $2^m*3^n=2^p=3^q$
+> Divide both sides by $2^p*3^n$ to get $2^n/2^p=3^q/3^m$ 
+> Simplify to $2^(m-p)=3^(q-n)$
+> Since all powers of $3$ are odd (or have reciprocals that are odd) and the 
+>     only powers of 2 that are odd are when the expondnet is $0$
+> So $2^(m-p)=3(q-n)=1$ and implies $m-p=0$ and $q-n=0$.
+> Thus, $m=p$ and $q=n$ and $(m,n)=(p,q$, so $g$ is 1-1
+
+9. Let $A$ be a set. the identity map of $A$, denoted $l_A$ is the function $l_A:A\to A$ defined by $l_A(x)=x$ for all $x\in A$
+
+10. Given functions $f:A\to B$ and $g:B\to C$, the composition $g\circ f:A\to C$ is defiend as $(g\circ f)(x)=g(f(x))$
+
+11. For $A=\{1,2,3\},B=\{x,y,z\},\ and\ C=\{\alpha,\beta,\gamma\}$ 
+    let $f:A\to B$ be defined as $f=\{(1,x),(2,y),(3,x)\}$
+    let $g:B\to C$ be defiend as $g=\{(x,\gamma),(y,\alpha),(z,\beta)\}$
+    What are $g\circ f$ and $f\circ g$
+
+$ g\circ f:A\to C$
+$ g\circ f=\{(1,\gamma),(2,\alpha),(3,\gamma)\}$
+
+$f\circ g=$NOT DEFINED
+
+
+12. Let $A$ be a set, $f:A\to A$ a function, and $n\in N$. the n-th iterative power of $f$, denoted $f^n$, is a function $f^n:A\to A$
+defined as $f^0=l_A$ and for $n\in\mathbb{Z}^+$
+
+$ f^n=f\circ f\circ f\circ ...\circ f$
+
+13. For $A=\{1,2,3,4\}$, defined $g:A\to A$ as $g=\{(1,2),(2,2),(3,1),(4,3)\}$
+find a) $g^0$, b) $g^1$, c) $g^2$, d) $g^3$, e) $g^4$
+
+a) $g^0=l_A=\{(1,1),(2,2),(3,3),(4,4)\}$
+b) $g^1=g$
+c) $g^2=\{(1, 2), (2, 2), (3, 2), (4, 1)\}$
+d) $g^3=\{(1, 2), (2, 2), (3, 2), (4, 2)\}$
+e) $g^4=\{(1, 2), (2, 2), (3, 2), (4, 2)\}$
+
+14. Let $f: A\to B$ be a bijection. The inverse of $f$ is the unique function $g:B\to A$ such that $g\circ f=l_A$
+and $f\circ g=l_A$ The inverse of $f$ is traditionally written as $f^-1$. A function that has an inverse is said to be invertible
+
+15. Let $f:[0,\infty)\to\mathbb{R}$ be defined by $f(x)=x^{1/2}$, is $f$ invertible? If yes, what is the inverse functino
+Not onto, so not invertible 
+
+16. Let $f:A\to B$. Then $f$ is a bijection if and only if f is invertible 
+
+## 2.3.4 - The graph of functions 
+
+17. Let $f:A\to B$. The graph of $f$, denoted $graph(f)$, is the set $graph(f)=\{(x,y)\in A\times B|f(x)=y\}$
+
+## 2.3.5 - Other important functions 
+
+18. The factorial function has the domain $\mathbb{N}$ and codomain $\mathbb{Z}^+$, denoted $n!$, and defined $0! =q$ and for $n\in\mathbb{Z}^+$
+
+$n! = 1*2*3*4*...n$
+

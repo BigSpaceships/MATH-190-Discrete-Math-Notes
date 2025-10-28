@@ -58,3 +58,30 @@ $ A^tB^t=\begin{bmatrix} 1 & 7 \\ 11 & 21\end{bmatrix}$
 
 13. Bitwise stuff on matricies works ($\land,\ \lor$)
 
+14) let A=[a_ij]_mxn and B = [b_ij]_mxn be (0,1) matricies
+- The join of A and B denoted $a\land B$ is $[a_ij\land b_ij]_{m\timexn}$
+- The meet of A and B denoted $a\lor B$ is $[a_ij\lor b_ij]_{m\timexn}$
+
+15) let 
+$A=\begin{bmatrix}1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+$B=\begin{bmatrix}1 & 0 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+
+a) 
+$A\land B=\begin{bmatrix}1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+$A\lor B=\begin{bmatrix}1 & 1 & 1 \\ 1 & 1 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+
+
+16) Let A and B be (0,1) matrices. The boolean product of $A$ and $B$, denoted $A\cdot B$ is the normal matrix product $AB$ 
+under boolean algebra (1 + 1 = 1)
+
+17)
+
+$A=\begin{bmatrix}1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+$B=\begin{bmatrix}1 & 0 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0\end{bmatrix}$
+
+$ A\cdot B=\begin{bmatrix}1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 0 & 1\end{bmatriix}$
+
+18) Let $A$ be a square (0,1) matrix and $n\in\mathbb{N}$. the n-th iterative boolean power of $A$, denoted $A^{[n]}$, 
+    is defined as $A^{[n]}=I$ and for $n\in\mathbb{Z}^+$.
+    $A^{[n]}=A\cdot A\cdot hdot\cdot A$ (n times)
+

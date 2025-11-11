@@ -48,14 +48,14 @@ b) -83 divided by 7
     $r=-83-(-12*7)=1$
 
 ## 4.1.4 - Modular Arithmetic
-7. Let $a,b\in\mathbb{Z}$ and let $m$ be a positive integer. We say that $a$ is congruent to $b$ modulo $m$, denoted $a\equiv b$(mod$m$), if $m|(a-b)$
+7. Let $a,b\in\mathbb{Z}$ and let $m$ be a positive integer. We say that $a$ is congruent to $b$ modulo $m$, denoted $a\equiv b(mod\ m)$, if $m|(a-b)$
   - write $a\nequiv b(mod\ m)$ if $m\ndivides (a-b)$
 
 8. determine if they are true or false
-a) $3\equiv 3\ mod\ 8$ $8|3-3$ T
-b) $3\equiv 27\ mod\ 3$ $8|(3-27)$ T
-c) $27\equiv 3\ mod\ 8$ $|(27-3)$ T
-d) $n\equiv n-1\ mod\ 8$ $8|n-(n-1)$ $8|1$ F
+a) $3\equiv 3\ mod\ 8$ = $8|3-3$ T
+b) $3\equiv 27\ mod\ 3$ = $8|(3-27)$ T
+c) $27\equiv 3\ mod\ 8$ = $8|(27-3)$ T
+d) $n\equiv n-1\ mod\ 8$ = $8|n-(n-1)$ = $8|1$ F
 e) if $n$ is odd, then $n^2\equiv 1\ mod\ 8$ T, see Section 1.8 Ex. 1
 
 ## 4.1.5 - Arithmetic Modulo M

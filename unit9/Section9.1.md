@@ -92,3 +92,18 @@ $ \mathcal{S} \circ \mathcal{R}=\{(0,\beta),(1,\beta),(1,\alpha),(2,\beta),(2,\a
 
 It's what you'd think of it's a little confusing because it's not a function but you have to follow all the paths
 
+10. Let $A$ be a set. The identity relation on $A$ is 
+$\Delta_A=\{(x,x)|x\in A\}\subseteq A\times A$
+
+11. Iterative Powers exist 
+Basis: $\mathcal{R}^0=\Delta_A$
+Recursive Step: for $k\in\mathbb{Z}^+\mathcal{R}\circ\mathcal{R}^{k-1}$
+
+12. Let $\mathcal{R}$ be a relation from $A$ to $B$. The inverse relation of $\mathcal{R}$ denoted $\mathcal{R}^-1$
+
+13. Let $\mathcal{R}$ be a relation on $A$
+i) $\mathcal{R}$ is reflexive if and only if $\Detla_A\subseteq\mathcal{R}$
+ii) $\mathcal{R}$ is symmetric if and only if $\mathcal{R}=\mathcal{R}^-1$
+iii) $\mathcal{R}$ is transitive if and only if $\mathcal{R}^2\subseteq\mathcal{R}$
+
+proof of iii online 

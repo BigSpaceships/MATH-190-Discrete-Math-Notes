@@ -30,3 +30,27 @@ a) draw a digraph representation of $(A,|)$
     three is directed to 6,9,12,15
     five divides 10, 15
     six divides 12
+
+b) draw digraph representation of $(A,|)$ but with reflexive and transitive edges removed
+    1 | 3 
+    1 | 5
+    3 | 6
+    3 | 9
+    3 | 15
+    5 | 10
+    5 | 15
+    6 | 12
+
+5. The Hasse diagram of a partially ordered set $(A,\precurlyeq)$ is the undirected graph representation 
+    with reflexive and transitive edges removed so that arrows would all be directed upward
+
+6. Draw the hasse diagram of $(A,|)$
+
+   12
+   |
+9  6  15  10
+ \ /.--'\ / 
+  3      5
+   '-. /
+      1
+

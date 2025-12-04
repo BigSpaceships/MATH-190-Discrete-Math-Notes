@@ -14,7 +14,7 @@ d) $\mathcal{R}_4=A\times B$
 2^6 possible relations, that is $|\mathcal{P}(A\times B)|$
 
 3. Properties of relations. Let $\mathcal{R}$ be a relation on $A$, then $\mathcal{R}$ is 
-i) reflexive $\equiv\forall a\in A[(a,b)\in\mathcal{R}]$
+i) reflexive $\equiv\forall a\in A[(a,a)\in\mathcal{R}]$
 ii) symmetric $\equiv\forall a,b\in A[(a,b)\in\mathcal{R}\to(b,a)\in\mathcal{R}]$
 iii) anti-symmetric $\equiv\forall a,b\in A[(a,b),(b,a)\in\mathcal{R}\to(a=b)]$
 iv) transitiive $\equiv\forall a,b\in A[(a,b),(b,c)\in\mathcal{R}\to(a,c)\in\mathcal{R}]$

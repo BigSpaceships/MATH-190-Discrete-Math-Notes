@@ -33,7 +33,7 @@ $ [0]_\mathcal{R} \cap [1]_\mathcal{R} = \emptyset$
 
 ## 9.5.4 - Equivialence classes and partitions 
 
-5. A collection of sets is pairwise disjoint if every two distinct sets $A$ and $B$ in teh collection satisfies $A\cup B=\emptyset$
+5. A collection of sets is pairwise disjoint if every two distinct sets $A$ and $B$ in the collection satisfies $A\cup B=\emptyset$
 
 6. Let $S$ be a set. We say a collection of sets $\{ A_n | n\in I\}$ (where $I$ is an indexed set) is a a partition of $S$ if 
     i) $A_i \subseteq S$ for every $i\in I$

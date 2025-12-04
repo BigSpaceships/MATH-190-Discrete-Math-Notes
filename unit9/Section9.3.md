@@ -55,7 +55,7 @@ $ M_\mathcal{R} = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 0 & 1 & 1 \end{bmatr
 
 $ M_\mathcal{S} = \begin{bmatrix} 0 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & 1 \end{bmatrix}$
 
-Determine $M_\mathcal{R} \odot\ M_\mathcal{S}$
+Determine $M_\mathcal{R} \odot\ M_\mathcal{S}$ (boolean product)
 
 $M_\mathcal{R} \odot\ M_\mathcal{S} = \begin{bmatrix} 0 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 1 & 1 \end{bmatrix}$
 
